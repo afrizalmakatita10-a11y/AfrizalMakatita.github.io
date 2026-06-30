@@ -202,4 +202,41 @@ hr {
     .right-column section:first-of-type h2 {
         margin-top: 0;
     }
+
+/* --- Left Column Navigation Links --- */
+html {
+    scroll-behavior: smooth; /* Gives a smooth animation when links are clicked */
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.nav-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+/* Subtle interactive move/highlight when menu items are hovered */
+.nav-link:hover {
+    color: var(--text-bright);
+    padding-left: 0.5rem;
+}
+
+/* Adds a hidden placeholder margin for seamless layout jump adjustments */
+.skills-gap-modifier {
+    margin-top: 3.5rem;
+}
+@media (min-width: 1024px) {
+    .skills-gap-modifier {
+        margin-top: 0rem;
+    }
 }
