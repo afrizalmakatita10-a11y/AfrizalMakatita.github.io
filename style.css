@@ -116,3 +116,20 @@ body > h2:first-of-type {
     font-size: 1.25rem;
     letter-spacing: normal;
 }
+
+/* Efek Sorotan Kursor */
+.pointer-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Supaya kursor tetap bisa nge-klik tombol/link di bawahnya */
+    z-index: 9999;       /* Membuat efek berada di lapisan paling atas */
+    background: radial-gradient(
+        600px circle at var(--x, 0px) var(--y, 0px), 
+        rgba(29, 78, 216, 0.15), 
+        transparent 80%
+    );
+    transition: background 0.3s ease;
+}
