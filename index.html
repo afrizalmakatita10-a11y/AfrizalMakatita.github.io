@@ -13,6 +13,7 @@
 </head>
 <body>
     <div class="pointer-glow"></div>
+
 <h1>Afrizal Anshari Makatita</h1>
 
 <h2>Data Analyst Portfolio</h2>
@@ -70,6 +71,16 @@ Aspiring Data Analyst with experience in data cleaning, exploratory data analysi
         View Presentation <span>→</span>
     </a>
 </div>
+
+<script>
+    const glow = document.querySelector('.pointer-glow');
+    
+    window.addEventListener('mousemove', (e) => {
+        // Memperbarui posisi koordinat X dan Y secara real-time ke CSS
+        glow.style.setProperty('--x', `${e.clientX}px`);
+        glow.style.setProperty('--y', `${e.clientY}px`);
+    });
+</script>
 
 </body>
 </html>
