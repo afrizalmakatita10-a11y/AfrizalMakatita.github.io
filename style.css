@@ -202,10 +202,11 @@ hr {
     .right-column section:first-of-type h2 {
         margin-top: 0;
     }
+}
 
-/* --- Left Column Navigation Links --- */
+/* --- Smooth Scroll and Sidebar Links --- */
 html {
-    scroll-behavior: smooth; /* Gives a smooth animation when links are clicked */
+    scroll-behavior: smooth;
 }
 
 .nav-menu {
@@ -225,18 +226,8 @@ html {
     transition: color 0.2s ease, padding-left 0.2s ease;
 }
 
-/* Subtle interactive move/highlight when menu items are hovered */
 .nav-link:hover {
     color: var(--text-bright);
     padding-left: 0.5rem;
 }
 
-/* Adds a hidden placeholder margin for seamless layout jump adjustments */
-.skills-gap-modifier {
-    margin-top: 3.5rem;
-}
-@media (min-width: 1024px) {
-    .skills-gap-modifier {
-        margin-top: 0rem;
-    }
-}
