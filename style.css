@@ -1,1 +1,38 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Base Body Styles */
+body {
+    background-color: #0f172a; /* Slate 900 - Deep dark blue/gray */
+    color: #94a3b8;            /* Slate 400 - Soft text color */
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding: 2rem 1.5rem;
+    max-width: 800px;         /* Keeps the content from stretching too wide */
+    margin: 0 auto;           /* Centers the container */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #f8fafc;            /* Slate 50 - Bright white for emphasis */
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #cbd5e1;
+}
