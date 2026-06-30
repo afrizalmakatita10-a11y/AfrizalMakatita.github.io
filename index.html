@@ -28,7 +28,8 @@
                 <!-- Clickable Sidebar Navigation Menu -->
                 <nav class="nav-menu">
                     <a href="#about" class="nav-link">About</a>
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#tech-skills" class="nav-link">Technical Skills</a>
+                    <a href="#soft-skills" class="nav-link">Soft Skills</a>
                     <a href="#projects" class="nav-link">Projects</a>
                 </nav>
             </div>
@@ -40,61 +41,58 @@
             <!-- About Me Section -->
             <section id="about">
                 <h2>About Me</h2>
-                
                 <p>
                     Aspiring Data Analyst with experience in data cleaning, exploratory data analysis, dashboard development, and business insights generation.
                 </p>
-                
             </section>
 
-            <!-- Combined Skills Section-->
-            <section id="skills">
+            <!-- Technical Skills Section -->
+            <section id="tech-skills">
                 <h2>Technical Skills</h2>
-                    <div class="skills-gap-modifier"></div>
-                
-                    <!-- Technical Skills Badges -->
-                    <div class="skills-container">
-                        <span class="skill-badge">Microsoft Office</span>
-                        <span class="skill-badge">Google Sheets</span>
-                        <span class="skill-badge">MySQL</span>
-                        <span class="skill-badge">Google BigQuery</span>
-                        <span class="skill-badge">Tableau</span>
-                        <span class="skill-badge">Power BI</span>
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">Statistics</span>
-                    </div>
+                <div class="skills-container">
+                    <span class="skill-badge">Microsoft Office</span>
+                    <span class="skill-badge">Google Sheets</span>
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">Google BigQuery</span>
+                    <span class="skill-badge">Tableau</span>
+                    <span class="skill-badge">Power BI</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Statistics</span>
+                </div>
+            </section>
 
-                <!-- Soft Skills Badges -->
+            <!-- Soft Skills Section -->
+            <section id="soft-skills">
                 <h2>Soft Skills</h2>
-                    <div class="skills-container">
-                        <span class="skill-badge">Data Analysis</span>
-                        <span class="skill-badge">Problem solving</span>
-                        <span class="skill-badge">Presentation</span>
-                        <span class="skill-badge">Communication</span>
-                        <span class="skill-badge">Collaboration</span>
-                        <span class="skill-badge">Adaptation</span>
-                    </div>
+                <div class="skills-container">
+                    <span class="skill-badge">Data Analysis</span>
+                    <span class="skill-badge">Problem solving</span>
+                    <span class="skill-badge">Presentation</span>
+                    <span class="skill-badge">Communication</span>
+                    <span class="skill-badge">Collaboration</span>
+                    <span class="skill-badge">Adaptation</span>
+                </div>
             </section>
 
             <!-- Projects Section -->
             <section id="projects">
                 <h2>Projects</h2>
-                
-                    <div class="project-card">
-                        <h3>Shopee Thailand Revenue Leakage Analysis</h3>
-                        <p>Conducted an end-to-end data analysis project to evaluate sales performance using e-commerce datasets.</p>
-                        <a href="https://docs.google.com/presentation/d/1DZLkNvbSPN0Bf9g67ntOyNx1uLOlr540pOIyqhqeoT0" target="_blank" class="project-link">
-                            View Presentation <span>→</span>
-                        </a>
-                    </div>
-    
-                    <div class="project-card">
-                        <h3>The Look Performance Analysis</h3>
-                        <p>Evaluated operational data and user retention behavior for a simulated e-commerce platform to analyze the impact of budget optimization and inventory reallocation.</p>
-                        <a href="https://docs.google.com/presentation/d/18iBbFsiRvFxVFYgvAa-JrgVybNSs26g2kx8VLlKe7xk" target="_blank" class="project-link">
-                            View Presentation <span>→</span>
-                        </a>
-                    </div>
+
+                <div class="project-card">
+                    <h3>Shopee Thailand Revenue Leakage Analysis</h3>
+                    <p>Conducted an end-to-end data analysis project to evaluate sales performance using e-commerce datasets.</p>
+                    <a href="https://docs.google.com/presentation/d/1DZLkNvbSPN0Bf9g67ntOyNx1uLOlr540pOIyqhqeoT0" target="_blank" class="project-link">
+                        View Presentation <span>→</span>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3>The Look Performance Analysis</h3>
+                    <p>Evaluated operational data and user retention behavior for a simulated e-commerce platform to analyze the impact of budget optimization and inventory reallocation.</p>
+                    <a href="https://docs.google.com/presentation/d/18iBbFsiRvFxVFYgvAa-JrgVybNSs26g2kx8VLlKe7xk" target="_blank" class="project-link">
+                        View Presentation <span>→</span>
+                    </a>
+                </div>
             </section>
             
         </main>
@@ -105,7 +103,6 @@
         const glow = document.querySelector('.pointer-glow');
         
         window.addEventListener('mousemove', (e) => {
-            // Memperbarui posisi koordinat X dan Y secara real-time ke CSS
             glow.style.setProperty('--x', `${e.clientX}px`);
             glow.style.setProperty('--y', `${e.clientY}px`);
         });
