@@ -244,3 +244,13 @@ hr {
         margin-top: 0;
     }
 }
+
+/* Clean vertical separation between about me paragraphs */
+#about p {
+    margin-bottom: 1.5rem;
+}
+
+/* Optional: Removes the margin from the very last paragraph to keep alignment tight */
+#about p:last-of-type {
+    margin-bottom: 0;
+}
